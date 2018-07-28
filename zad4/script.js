@@ -1,4 +1,6 @@
 
-const arrAvg = arr => arr.reduce((a,b) => a + b, 0) / arr.length
+const average = (...args) => args.reduce((a,b) => a + b, 0) / args.length
 
-console.log(arrAvg([1, 5, 5, 5, 4, 3, 3, 2, 1]));
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
+
+console.log(average(...grades))
